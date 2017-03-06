@@ -13,6 +13,13 @@
 	<plugin name="cordova-plugin-device" spec="1.1.4" />
 	<plugin name="cordova-plugin-splashscreen" spec="4.0.1" />
 
+	<!-- Spotify -->
+	<plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+	<plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+	<plugin name="cordova-plugin-media" spec="~1.0.1" />
+	<plugin name="cordova-plugin-console" spec="~1.0.1" />
+	<plugin name="cordova-plugin-x-socialsharing" spec="~5.0.9"/>
+
 	<icon src="icon.png" width="512" height="512" /> 
 
 	<platform name="ios">
