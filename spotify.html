@@ -11,6 +11,8 @@
 	<link rel="icon" href="images/favicon.png">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/spotify.css" rel="stylesheet">
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200" rel="stylesheet">
 </head>
@@ -25,8 +27,408 @@
 							<h1 style="font-size: 44px;font-family: 'Oswald', sans-serif;">Toque na sua música favorita e sinta o som dominar o ambiente!</h1>
 						</div>
 						<div class="col-xs-12">
-							<!--<iframe src="https://embed.spotify.com/?uri=spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>-->
-							<iframe src="player.html" width="650" height="380" frameborder="0" allowtransparency="true"></iframe>
+							<div id="container-spotify" class="container-spotify tracklist-view">
+		<div class="main">
+			<a href="https://app.adjust.com/em43gi?deep_link=spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg%3Fcontext%3D%26utm_campaign%3D%26utm_source%3D%26utm_medium%3D&campaign=&adgroup=&creative=&label=sp_cid%3Acad05a23757fb78d30368ade7f10a4cf" target="_blank" rel="noopener" class="logo"></a>
+			<div class="cover-small" style="background-image: url('https://i.scdn.co/image/91bfa5ae6742e518eb83bff5b87acbe6e90d0a23')"></div>
+			<button id="get-link-button" class="get-link-button">&lt;/&gt;</button>
+			<button id="play-button" class="play-button"></button>
+			<div class="info">
+				<div id="track-name" class="name"><a href="https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3" target="_blank">Shape of You</a>
+				</div>
+				<div id="track-artists" class="creator"><span class="artist"><a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank">Ed Sheeran</a></span>
+				</div>
+			</div>
+			<div id="progress-container-spotify">
+				<div class="progress">
+					<div id="skip-previous" class="skip-previous"></div>
+					<div id="progress-time" class="progress-time">3:53</div>
+					<div id="skip-next" class="skip-next"></div>
+					<div id="progress-bar-outer" class="progress-bar"><span id="progress-bar" style="width: 0%"></span>
+					</div>
+				</div>
+				<div class="context-name"> Brazil Top 50 de spotifycharts </div>
+			</div>
+		</div>
+		<div class="extra" id="extra">
+			<ul class="track-list">
+				<li class="track-row" data-position="1" data-name="Shape of You" data-artists="Ed Sheeran" data-duration-ms="233712" data-uri="spotify:track:7qiZfU4dY1lWllzX7mPBI3" data-preview="musicas/shape-of-you.mp3" data-web-player-url="https://play.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">1</div>
+					<div class="track-row-info "> Shape of You
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">3:53</div>
+				</li>
+				<li class="track-row" data-position="2" data-name="Você Partiu Meu Coração" data-artists="Nego do Borel, Anitta, Wesley Safadão" data-duration-ms="179000" data-uri="spotify:track:0u8aj0c4IxeVSLTUuuq9V5" data-preview="musicas/voce-partiu-meu-coracao.mp3" data-web-player-url="https://play.spotify.com/track/0u8aj0c4IxeVSLTUuuq9V5" data-size-640="https://i.scdn.co/image/de29d764890ade690ef18a0b88d1c41b42535c08" data-size-300="https://i.scdn.co/image/e6d2b2a4a2438d3fc918b17868cf036b94e7f93c" data-size-64="https://i.scdn.co/image/9fa0a3a1193a93d9622cce22285507717c4137af">
+					<div class="track-row-number">2</div>
+					<div class="track-row-info "> Você Partiu Meu Coração
+						<div class="track-artist">Nego do Borel, Anitta, Wesley Safadão</div>
+					</div>
+					<div class="track-row-duration">2:59</div>
+				</li>
+				<li class="track-row" data-position="3" data-name="Hear Me Now" data-artists="Alok, Bruno Martini, Zeeba" data-duration-ms="192846" data-uri="spotify:track:1a5Yu5L18qNxVhXx38njON" data-preview="musicas/hear-me-now.mp3" data-web-player-url="https://play.spotify.com/track/1a5Yu5L18qNxVhXx38njON" data-size-640="https://i.scdn.co/image/763df5cc4432fc7febe0883e7d13790d64e1fc3a" data-size-300="https://i.scdn.co/image/e6583f49c42b5137f173830474e6461721cd5573" data-size-64="https://i.scdn.co/image/aab927246ab3e962eeaed17da492b750fb264893">
+					<div class="track-row-number">3</div>
+					<div class="track-row-info "> Hear Me Now
+						<div class="track-artist">Alok, Bruno Martini, Zeeba</div>
+					</div>
+					<div class="track-row-duration">3:12</div>
+				</li>
+				<li class="track-row" data-position="4" data-name="Loka" data-artists="Simone &amp; Simaria, Anitta" data-duration-ms="215169" data-uri="spotify:track:257tme6AhneIKAqVF1HTH4" data-preview="musicas/loka.mp3" data-web-player-url="https://play.spotify.com/track/257tme6AhneIKAqVF1HTH4" data-size-640="https://i.scdn.co/image/b581a202b73b7d6b7f02c357b2a6a397282720e9" data-size-300="https://i.scdn.co/image/55dd5ea00ea3f6bdb28f4d564d5d85d92ef1bcac" data-size-64="https://i.scdn.co/image/454e9974b75b1072718811aef1b7e843e10c432d">
+					<div class="track-row-number">4</div>
+					<div class="track-row-info "> Loka
+						<div class="track-artist">Simone &amp; Simaria, Anitta</div>
+					</div>
+					<div class="track-row-duration">3:35</div>
+				</li>
+				<li class="track-row" data-position="5" data-name="Vidinha de Balada - Ao Vivo" data-artists="Henrique &amp; Juliano" data-duration-ms="186980" data-uri="spotify:track:4FHw39Ke6pVt5tNKvLr4r3" data-preview="musicas/vidinha-de-balada.mp3" data-web-player-url="https://play.spotify.com/track/4FHw39Ke6pVt5tNKvLr4r3" data-size-640="https://i.scdn.co/image/07c422377b033cb286450c73448bb3e10192eae9" data-size-300="https://i.scdn.co/image/9a8c3106600c53e5aa1d4d51a38bbfad8eed0257" data-size-64="https://i.scdn.co/image/ccafc670f49f7db8c025c01f378b846bce3db829">
+					<div class="track-row-number">5</div>
+					<div class="track-row-info "> Vidinha de Balada - Ao Vivo
+						<div class="track-artist">Henrique &amp; Juliano</div>
+					</div>
+					<div class="track-row-duration">3:06</div>
+				</li>
+				<li class="track-row" data-position="6" data-name="Olha a Explosão" data-artists="Mc Kevinho" data-duration-ms="161593" data-uri="spotify:track:6m2LNopVJKsvBB9l7Z1rwn" data-preview="musicas/olha-a-explosao.mp3" data-web-player-url="https://play.spotify.com/track/6m2LNopVJKsvBB9l7Z1rwn" data-size-640="https://i.scdn.co/image/6b099b70badb0060e36843aca93e1b7001791dd0" data-size-300="https://i.scdn.co/image/103ac7cc2e43335490c5a564da7430a8076dd799" data-size-64="https://i.scdn.co/image/3791d612d1d5fed750f4450e320c05c9b1522c3d">
+					<div class="track-row-number">6</div>
+					<div class="track-row-info "> Olha a Explosão
+						<div class="track-artist">Mc Kevinho</div>
+					</div>
+					<div class="track-row-duration">2:41</div>
+				</li>
+				<li class="track-row" data-position="7" data-name="Te Assumi Pro Brasil - Na Praia 2 / Ao Vivo" data-artists="Matheus &amp; Kauan" data-duration-ms="162464" data-uri="spotify:track:4JWvILyOVmhPqXgSSjVB4p" data-preview="musicas/te-assumi-pro-brasil.mp3" data-web-player-url="https://play.spotify.com/track/4JWvILyOVmhPqXgSSjVB4p" data-size-640="https://i.scdn.co/image/edc232012681763fb135f6642944eba68313224f" data-size-300="https://i.scdn.co/image/6b6b47ba53b079951678900cf84b7e6c1c94fbfb" data-size-64="https://i.scdn.co/image/cc90bdfc448f75bcfe11f11e1929e448f606d9e0">
+					<div class="track-row-number">7</div>
+					<div class="track-row-info "> Te Assumi Pro Brasil - Na Praia 2 / Ao Vivo
+						<div class="track-artist">Matheus &amp; Kauan</div>
+					</div>
+					<div class="track-row-duration">2:42</div>
+				</li>
+				<li class="track-row" data-position="8" data-name="Acordando o Prédio" data-artists="Luan Santana" data-duration-ms="218467" data-uri="spotify:track:40bK2uosUmAS92c17n98xd" data-preview="musicas/acordando-o-predio.mp3" data-web-player-url="https://play.spotify.com/track/40bK2uosUmAS92c17n98xd" data-size-640="https://i.scdn.co/image/eb7a10a02ca3df39c95b2483c98b03fa12ce0cc8" data-size-300="https://i.scdn.co/image/5ca952dc963ad5f24c076ca00ab1ec154f8f9525" data-size-64="https://i.scdn.co/image/2a1fd0978ee97ef96fc1c1af3205075891a17de5">
+					<div class="track-row-number">8</div>
+					<div class="track-row-info "> Acordando o Prédio
+						<div class="track-artist">Luan Santana</div>
+					</div>
+					<div class="track-row-duration">3:38</div>
+				</li>
+				<li class="track-row" data-position="9" data-name="I Don’t Wanna Live Forever (Fifty Shades Darker) - From &quot;Fifty Shades Darker (Original Motion Picture Soundtrack)&quot;" data-artists="ZAYN, Taylor Swift" data-duration-ms="245200" data-uri="spotify:track:3NdDpSvN911VPGivFlV5d0" data-preview="musicas/i-dont-wanna-live-forever.mp3" data-web-player-url="https://play.spotify.com/track/3NdDpSvN911VPGivFlV5d0" data-size-640="https://i.scdn.co/image/7f9134aaf819b92e6576384eb7097ea3fa5e30bb" data-size-300="https://i.scdn.co/image/c41dad509e3c255ad494b1b327ae977d7e84a1ed" data-size-64="https://i.scdn.co/image/ed9f48f54b69d299b1226b656a9d2c5634bff84e">
+					<div class="track-row-number">9</div>
+					<div class="track-row-info "> I Don’t Wanna Live Forever (Fifty Shades Darker) - From &quot;Fifty Shades Darker (Original Motion Picture Soundtrack)&quot;
+						<div class="track-artist">ZAYN, Taylor Swift</div>
+					</div>
+					<div class="track-row-duration">4:05</div>
+				</li>
+				<li class="track-row" data-position="10" data-name="Malbec (Part.: Dennis Dj) - Ao Vivo" data-artists="Henrique &amp; Diego, Dennis DJ" data-duration-ms="213600" data-uri="spotify:track:7vLG0D8ouHd4brF5TVJQya" data-preview="musicas/malbec.mp3" data-web-player-url="https://play.spotify.com/track/7vLG0D8ouHd4brF5TVJQya" data-size-640="https://i.scdn.co/image/245a93168a0980fb2ba2d73d64973877fe316eac" data-size-300="https://i.scdn.co/image/f10d27558a6d43ba0e6b9d3aa83919dc5fb3ca9a" data-size-64="https://i.scdn.co/image/867fe6aa3c85f82a92519077018133a304cbf3d9">
+					<div class="track-row-number">10</div>
+					<div class="track-row-info "> Malbec (Part.: Dennis Dj) - Ao Vivo
+						<div class="track-artist">Henrique &amp; Diego, Dennis DJ</div>
+					</div>
+					<div class="track-row-duration">3:33</div>
+				</li>
+				<li class="track-row" data-position="11" data-name="Chained To The Rhythm" data-artists="Katy Perry, Skip Marley" data-duration-ms="237915" data-uri="spotify:track:5ndfVSDyPq90jaIUhNPeby" data-preview="musicas/chained-to-the-rhythm.mp3" data-web-player-url="https://play.spotify.com/track/5ndfVSDyPq90jaIUhNPeby" data-size-640="https://i.scdn.co/image/9209f6954e02f23909152a90bddb1abe807b2b46" data-size-300="https://i.scdn.co/image/5cd45f06e6cb2d661554e345beb187ebb6ebbefa" data-size-64="https://i.scdn.co/image/e54c037821b6bcd789f1f2c32e382fe11bcd214b">
+					<div class="track-row-number">11</div>
+					<div class="track-row-info "> Chained To The Rhythm
+						<div class="track-artist">Katy Perry, Skip Marley</div>
+					</div>
+					<div class="track-row-duration">3:57</div>
+				</li>
+				<li class="track-row" data-position="12" data-name="Something Just Like This" data-artists="The Chainsmokers, Coldplay" data-duration-ms="247626" data-uri="spotify:track:1dNIEtp7AY3oDAKCGg2XkH" data-preview="musicas/something-just-like-this.mp3" data-web-player-url="https://play.spotify.com/track/1dNIEtp7AY3oDAKCGg2XkH" data-size-640="https://i.scdn.co/image/a57625bbecee7b4e7fe932a31cd92319d2a32855" data-size-300="https://i.scdn.co/image/4c45b4ad2a79f5a345e854180cec249731db1908" data-size-64="https://i.scdn.co/image/cd7345b44b0e950735295029bfd96b5d174bead6">
+					<div class="track-row-number">12</div>
+					<div class="track-row-info "> Something Just Like This
+						<div class="track-artist">The Chainsmokers, Coldplay</div>
+					</div>
+					<div class="track-row-duration">4:07</div>
+				</li>
+				<li class="track-row" data-position="13" data-name="Deu Onda" data-artists="MC G15" data-duration-ms="144039" data-uri="spotify:track:0EPxmvsG1BY5td4aTOkWBF" data-preview="musicas/deu-onda.mp3" data-web-player-url="https://play.spotify.com/track/0EPxmvsG1BY5td4aTOkWBF" data-size-640="https://i.scdn.co/image/605089389288267a553cfff0cd44e8b2558ad584" data-size-300="https://i.scdn.co/image/e779401f1348de61afdc8985fb9fb402518d0b98" data-size-64="https://i.scdn.co/image/bf2b336a183f8bb0125c8e2cc497d7660fce6671">
+					<div class="track-row-number">13</div>
+					<div class="track-row-info "> Deu Onda
+						<div class="track-artist">MC G15</div>
+					</div>
+					<div class="track-row-duration">2:24</div>
+				</li>
+				<li class="track-row" data-position="14" data-name="Starboy" data-artists="The Weeknd, Daft Punk" data-duration-ms="230453" data-uri="spotify:track:5aAx2yezTd8zXrkmtKl66Z" data-preview="musicas/starboy.mp3" data-web-player-url="https://play.spotify.com/track/5aAx2yezTd8zXrkmtKl66Z" data-size-640="https://i.scdn.co/image/2c7ef91e8327dec51919d1f3be37a411b4028306" data-size-300="https://i.scdn.co/image/4816c45ce6ef1e45df6a84784d2123595f787182" data-size-64="https://i.scdn.co/image/a2c3947510abbeb764603aa53b96b33d97bd3ff0">
+					<div class="track-row-number">14</div>
+					<div class="track-row-info "> Starboy
+						<div class="track-artist">The Weeknd, Daft Punk</div>
+					</div>
+					<div class="track-row-duration">3:50</div>
+				</li>
+				<li class="track-row" data-position="15" data-name="It Ain&#039;t Me (with Selena Gomez)" data-artists="Kygo, Selena Gomez" data-duration-ms="220780" data-uri="spotify:track:3eR23VReFzcdmS7TYCrhCe" data-preview="musicas/it-aint-me.mp3" data-web-player-url="https://play.spotify.com/track/3eR23VReFzcdmS7TYCrhCe" data-size-640="https://i.scdn.co/image/fa723e93606cb5b5d5d14a01c397807bdc05ef1f" data-size-300="https://i.scdn.co/image/e4ff86d36eb8a8842f7fce8295c64cc60fa21c18" data-size-64="https://i.scdn.co/image/46e5641fd12fb297801f987137d193c3548a3654">
+					<div class="track-row-number">15</div>
+					<div class="track-row-info "> It Ain&#039;t Me (with Selena Gomez)
+						<div class="track-artist">Kygo, Selena Gomez</div>
+					</div>
+					<div class="track-row-duration">3:40</div>
+				</li>
+				<li class="track-row" data-position="16" data-name="E Essa Boca Aí? - Ao Vivo" data-artists="Bruninho &amp; Davi, Luan Santana" data-duration-ms="180160" data-uri="spotify:track:0Kr77AosR2k944IhHm8zhH" data-preview="musicas/e-essa-boca-ai.mp3" data-web-player-url="https://play.spotify.com/track/0Kr77AosR2k944IhHm8zhH" data-size-640="https://i.scdn.co/image/fa0932682cd750b45e1568003ed4839b53cf9786" data-size-300="https://i.scdn.co/image/9fc97392dd165bfe6935a846adf2b4d724779d78" data-size-64="https://i.scdn.co/image/d4f87084adb4452e0ec9228287c4cca857935828">
+					<div class="track-row-number">16</div>
+					<div class="track-row-info "> E Essa Boca Aí? - Ao Vivo
+						<div class="track-artist">Bruninho &amp; Davi, Luan Santana</div>
+					</div>
+					<div class="track-row-duration">3:00</div>
+				</li>
+				<li class="track-row" data-position="17" data-name="Eu Sei de Cor - Ao Vivo | Acústico" data-artists="Marília Mendonça" data-duration-ms="174663" data-uri="spotify:track:45wqPwIH4A5cr2IyyD4WKf" data-preview="musicas/eu-sei-de-cor.mp3" data-web-player-url="https://play.spotify.com/track/45wqPwIH4A5cr2IyyD4WKf" data-size-640="https://i.scdn.co/image/0b70d95c7d731469e8c06b30ee9e299e854b754e" data-size-300="https://i.scdn.co/image/2c6e05d8673d4393a50c9dbcf1f70e95f4c6a2d9" data-size-64="https://i.scdn.co/image/22b8d8c630d623cc2c5f1b0f8a61cfedb3daf7ad">
+					<div class="track-row-number">17</div>
+					<div class="track-row-info "> Eu Sei de Cor - Ao Vivo | Acústico
+						<div class="track-artist">Marília Mendonça</div>
+					</div>
+					<div class="track-row-duration">2:54</div>
+				</li>
+				<li class="track-row" data-position="18" data-name="Green Light" data-artists="Lorde" data-duration-ms="234661" data-uri="spotify:track:1WC5UN1U79gJlxGLYDGIO7" data-preview="musicas/green-light.mp3" data-web-player-url="https://play.spotify.com/track/1WC5UN1U79gJlxGLYDGIO7" data-size-640="https://i.scdn.co/image/20a546e75d213ffcb87f9bda7aecb55760c330a1" data-size-300="https://i.scdn.co/image/52525e115dab1d038df73060311e462f74574f66" data-size-64="https://i.scdn.co/image/35265381ac76796ae437f8ab8d72465cfaded425">
+					<div class="track-row-number">18</div>
+					<div class="track-row-info "> Green Light
+						<div class="track-artist">Lorde</div>
+					</div>
+					<div class="track-row-duration">3:54</div>
+				</li>
+				<li class="track-row" data-position="19" data-name="Castle on the Hill" data-artists="Ed Sheeran" data-duration-ms="261153" data-uri="spotify:track:6PCUP3dWmTjcTtXY02oFdT" data-preview="musicas/castle-on-the-hill.mp3" data-web-player-url="https://play.spotify.com/track/6PCUP3dWmTjcTtXY02oFdT" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">19</div>
+					<div class="track-row-info "> Castle on the Hill
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">4:21</div>
+				</li>
+				<li class="track-row" data-position="20" data-name="Galway Girl" data-artists="Ed Sheeran" data-duration-ms="170826" data-uri="spotify:track:0afhq8XCExXpqazXczTSve" data-preview="musicas/galway-girl.mp3" data-web-player-url="https://play.spotify.com/track/0afhq8XCExXpqazXczTSve" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">20</div>
+					<div class="track-row-info "> Galway Girl
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">2:50</div>
+				</li>
+				<li class="track-row" data-position="21" data-name="Paris" data-artists="The Chainsmokers" data-duration-ms="221520" data-uri="spotify:track:15vzANxN8G9wWfwAJLLMCg" data-preview="musicas/paris.mp3" data-web-player-url="https://play.spotify.com/track/15vzANxN8G9wWfwAJLLMCg" data-size-640="https://i.scdn.co/image/c368fccee1b5ee225dc771075cc5f2fc1bdc8c4d" data-size-300="https://i.scdn.co/image/512156c3c2c4d8c6fb827918bdc1bcb1744a110c" data-size-64="https://i.scdn.co/image/ae489269fc8ff698a864cdc28072dc71b81b0f37">
+					<div class="track-row-number">21</div>
+					<div class="track-row-info "> Paris
+						<div class="track-artist">The Chainsmokers</div>
+					</div>
+					<div class="track-row-duration">3:41</div>
+				</li>
+				<li class="track-row" data-position="22" data-name="Decide Aí - Na Praia / Ao Vivo" data-artists="Matheus &amp; Kauan" data-duration-ms="162960" data-uri="spotify:track:0jIitZeIQRTaZgFQf2WpGK" data-preview="musicas/decide-ai.mp3" data-web-player-url="https://play.spotify.com/track/0jIitZeIQRTaZgFQf2WpGK" data-size-640="https://i.scdn.co/image/aef5a877d3266f8eef23662e0c0d661b553af4f1" data-size-300="https://i.scdn.co/image/4ba622caae9b1bcb455e03f2900274949bde04bc" data-size-64="https://i.scdn.co/image/95684479f4feb2ab544f9152e484e53f2dd95c83">
+					<div class="track-row-number">22</div>
+					<div class="track-row-info "> Decide Aí - Na Praia / Ao Vivo
+						<div class="track-artist">Matheus &amp; Kauan</div>
+					</div>
+					<div class="track-row-duration">2:42</div>
+				</li>
+				<li class="track-row" data-position="23" data-name="De Quem É a Culpa - Ao Vivo" data-artists="Marília Mendonça" data-duration-ms="208392" data-uri="spotify:track:10KJMfYgg6CORIhtkPn04i" data-preview="musicas/de-quem-e-a-culpa.mp3" data-web-player-url="https://play.spotify.com/track/10KJMfYgg6CORIhtkPn04i" data-size-640="https://i.scdn.co/image/ac3e89b5782a6363311d286a983f01b63984e495" data-size-300="https://i.scdn.co/image/e538fe052a724baeee197e1defaad5432569058b" data-size-64="https://i.scdn.co/image/3c5ba3c4f1e31623cec292c0857ad7522ce757ab">
+					<div class="track-row-number">23</div>
+					<div class="track-row-info "> De Quem É a Culpa - Ao Vivo
+						<div class="track-artist">Marília Mendonça</div>
+					</div>
+					<div class="track-row-duration">3:28</div>
+				</li>
+				<li class="track-row" data-position="24" data-name="Meu Coração Deu PT - Ao Vivo" data-artists="Wesley Safadão, Matheus &amp; Kauan" data-duration-ms="183626" data-uri="spotify:track:6zCqeUUqLb2CapBmVwAHll" data-preview="musicas/meu-coracao-deu-pt.mp3" data-web-player-url="https://play.spotify.com/track/6zCqeUUqLb2CapBmVwAHll" data-size-640="https://i.scdn.co/image/08ca9829369c7f3bbbd6d86fc3218fb88f51f7d7" data-size-300="https://i.scdn.co/image/ffbb81217eb8c3fd0c332e7d6995081057748ce0" data-size-64="https://i.scdn.co/image/1a9b8851c952726a0527943ca63a738acd53059f">
+					<div class="track-row-number">24</div>
+					<div class="track-row-info "> Meu Coração Deu PT - Ao Vivo
+						<div class="track-artist">Wesley Safadão, Matheus &amp; Kauan</div>
+					</div>
+					<div class="track-row-duration">3:03</div>
+				</li>
+				<li class="track-row" data-position="25" data-name="Closer" data-artists="The Chainsmokers, Halsey" data-duration-ms="244960" data-uri="spotify:track:7BKLCZ1jbUBVqRi2FVlTVw" data-preview="musicas/closer.mp3" data-web-player-url="https://play.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw" data-size-640="https://i.scdn.co/image/512bd22e2bc73f9883b8612daf4f23acaac3c776" data-size-300="https://i.scdn.co/image/2e244b9284d317b2019bb9fd44d9a086210d4974" data-size-64="https://i.scdn.co/image/57ba46d39d710e99ae524b279cae3a3981ace43f">
+					<div class="track-row-number">25</div>
+					<div class="track-row-info "> Closer
+						<div class="track-artist">The Chainsmokers, Halsey</div>
+					</div>
+					<div class="track-row-duration">4:04</div>
+				</li>
+				<li class="track-row" data-position="26" data-name="Medo Bobo - Ao Vivo" data-artists="Maiara &amp; Maraisa" data-duration-ms="174920" data-uri="spotify:track:2CW04trIoYMbroZWDzPAjs" data-preview="musicas/medo-bobo.mp3" data-web-player-url="https://play.spotify.com/track/2CW04trIoYMbroZWDzPAjs" data-size-640="https://i.scdn.co/image/f4345bc159164d9037b22b02325ab89fc83800bb" data-size-300="https://i.scdn.co/image/37885ba5855cef8ab124b0c9b5b6fdf789220741" data-size-64="https://i.scdn.co/image/dc1bcfe3d2c0edb6073ecb9ed1ab0c0e9fab99dd">
+					<div class="track-row-number">26</div>
+					<div class="track-row-info "> Medo Bobo - Ao Vivo
+						<div class="track-artist">Maiara &amp; Maraisa</div>
+					</div>
+					<div class="track-row-duration">2:54</div>
+				</li>
+				<li class="track-row" data-position="27" data-name="Perfect" data-artists="Ed Sheeran" data-duration-ms="263400" data-uri="spotify:track:0tgVpDi06FyKpA1z0VMD4v" data-preview="musicas/perfect.mp3" data-web-player-url="https://play.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">27</div>
+					<div class="track-row-info "> Perfect
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">4:23</div>
+				</li>
+				<li class="track-row" data-position="28" data-name="Sim ou não (Participação especial Maluma)" data-artists="Anitta, Maluma" data-duration-ms="206270" data-uri="spotify:track:4FxumkF81ICxITeqxx4nK9" data-preview="musicas/sim-ou-nao.mp3" data-web-player-url="https://play.spotify.com/track/4FxumkF81ICxITeqxx4nK9" data-size-640="https://i.scdn.co/image/37ba9c490ec98d0b56d3c8b03e00bf2ae69387f5" data-size-300="https://i.scdn.co/image/1f1616419083fb6fbfa3d0a42338343be43a7621" data-size-64="https://i.scdn.co/image/2b5151afe2931e48987d332242bab2144e48ba06">
+					<div class="track-row-number">28</div>
+					<div class="track-row-info "> Sim ou não (Participação especial Maluma)
+						<div class="track-artist">Anitta, Maluma</div>
+					</div>
+					<div class="track-row-duration">3:26</div>
+				</li>
+				<li class="track-row" data-position="29" data-name="Paredes - Ao Vivo" data-artists="Jorge &amp; Mateus" data-duration-ms="184032" data-uri="spotify:track:2GfxgssRHvY1azHtaRqKoK" data-preview="musicas/paredes.mp3" data-web-player-url="https://play.spotify.com/track/2GfxgssRHvY1azHtaRqKoK" data-size-640="https://i.scdn.co/image/2e946a47cc1a2dcc232b0893272bf29066aef040" data-size-300="https://i.scdn.co/image/b983adb27a9080730c536c6c37d0f4f8cf9fcb9a" data-size-64="https://i.scdn.co/image/22d969b6ec8598f0bd846b7c1eb994ad6e4ba6de">
+					<div class="track-row-number">29</div>
+					<div class="track-row-info "> Paredes - Ao Vivo
+						<div class="track-artist">Jorge &amp; Mateus</div>
+					</div>
+					<div class="track-row-duration">3:04</div>
+				</li>
+				<li class="track-row" data-position="30" data-name="10% - Ao Vivo" data-artists="Maiara &amp; Maraisa" data-duration-ms="174653" data-uri="spotify:track:2wFnRPjuqwNySFiK0Qfg8L" data-preview="musicas/10-porcento.mp3" data-web-player-url="https://play.spotify.com/track/2wFnRPjuqwNySFiK0Qfg8L" data-size-640="https://i.scdn.co/image/f4345bc159164d9037b22b02325ab89fc83800bb" data-size-300="https://i.scdn.co/image/37885ba5855cef8ab124b0c9b5b6fdf789220741" data-size-64="https://i.scdn.co/image/dc1bcfe3d2c0edb6073ecb9ed1ab0c0e9fab99dd">
+					<div class="track-row-number">30</div>
+					<div class="track-row-info "> 10% - Ao Vivo
+						<div class="track-artist">Maiara &amp; Maraisa</div>
+					</div>
+					<div class="track-row-duration">2:54</div>
+				</li>
+				<li class="track-row" data-position="31" data-name="Chantaje" data-artists="Shakira, Maluma" data-duration-ms="195612" data-uri="spotify:track:1WniHvhq9zTkny0WvGXX8o" data-preview="musicas/chantaje.mp3" data-web-player-url="https://play.spotify.com/track/1WniHvhq9zTkny0WvGXX8o" data-size-640="https://i.scdn.co/image/c422311a3e1eba6fa97fc2286be73cc124149dcb" data-size-300="https://i.scdn.co/image/c9d386c1322df38871bdb66ef1d312103567bacb" data-size-64="https://i.scdn.co/image/137645980796e414d0cebd4ef40bbe544dfcd1a2">
+					<div class="track-row-number">31</div>
+					<div class="track-row-info "> Chantaje
+						<div class="track-artist">Shakira, Maluma</div>
+					</div>
+					<div class="track-row-duration">3:15</div>
+				</li>
+				<li class="track-row" data-position="32" data-name="Como Faz Com Ela - Ao Vivo" data-artists="Marília Mendonça" data-duration-ms="150348" data-uri="spotify:track:2Gvn46nwyQhUnQiFhlP7WX" data-preview="musicas/como-faz-com-ela.mp3" data-web-player-url="https://play.spotify.com/track/2Gvn46nwyQhUnQiFhlP7WX" data-size-640="https://i.scdn.co/image/141301e9932aedde6c50a243437889ab1d78d53e" data-size-300="https://i.scdn.co/image/fa294dea82ba3328d337e93ffe8efa13221c4462" data-size-64="https://i.scdn.co/image/37ee295ef319031fe609b0b48c0f3e026b91c23d">
+					<div class="track-row-number">32</div>
+					<div class="track-row-info "> Como Faz Com Ela - Ao Vivo
+						<div class="track-artist">Marília Mendonça</div>
+					</div>
+					<div class="track-row-duration">2:30</div>
+				</li>
+				<li class="track-row" data-position="33" data-name="Cold" data-artists="Maroon 5, Future" data-duration-ms="234308" data-uri="spotify:track:5NNlUMcOEOdoOIwwaWXv0k" data-preview="musicas/cold.mp3" data-web-player-url="https://play.spotify.com/track/5NNlUMcOEOdoOIwwaWXv0k" data-size-640="https://i.scdn.co/image/9e57c752620c9eae1273035f47f09c7505703bd7" data-size-300="https://i.scdn.co/image/b60ba264d7ade6580f94e74356d4103aece20d97" data-size-64="https://i.scdn.co/image/a805f54257b3fde55bd03a9d2b13268797a42178">
+					<div class="track-row-number">33</div>
+					<div class="track-row-info "> Cold
+						<div class="track-artist">Maroon 5, Future</div>
+					</div>
+					<div class="track-row-duration">3:54</div>
+				</li>
+				<li class="track-row" data-position="34" data-name="Dive" data-artists="Ed Sheeran" data-duration-ms="238440" data-uri="spotify:track:51ChrwmUPDJvedPQnIU8Ls" data-preview="musicas/dive.mp3" data-web-player-url="https://play.spotify.com/track/51ChrwmUPDJvedPQnIU8Ls" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">34</div>
+					<div class="track-row-info "> Dive
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">3:58</div>
+				</li>
+				<li class="track-row" data-position="35" data-name="Ninguém É de Ferro" data-artists="Wesley Safadão, Marília Mendonça" data-duration-ms="137698" data-uri="spotify:track:1e315r3zQjsng2z952ePQ1" data-preview="musicas/ninguem-e-de-ferro.mp3" data-web-player-url="https://play.spotify.com/track/1e315r3zQjsng2z952ePQ1" data-size-640="https://i.scdn.co/image/45db4ab1bc12ec5a1e375a99ebc4c322d6853b8d" data-size-300="https://i.scdn.co/image/d0e795f91be4835c7e39acac1a7aa4fd6121f270" data-size-64="https://i.scdn.co/image/efa665d045a006da92020a3b120976e013c5d490">
+					<div class="track-row-number">35</div>
+					<div class="track-row-info "> Ninguém É de Ferro
+						<div class="track-artist">Wesley Safadão, Marília Mendonça</div>
+					</div>
+					<div class="track-row-duration">2:17</div>
+				</li>
+				<li class="track-row" data-position="36" data-name="Todo Dia" data-artists="Pabllo Vittar, Rico Dalasam" data-duration-ms="144000" data-uri="spotify:track:3iDY4SzUHPkC3WTXpfxXJG" data-preview="musicas/todo-dia.mp3" data-web-player-url="https://play.spotify.com/track/3iDY4SzUHPkC3WTXpfxXJG" data-size-640="https://i.scdn.co/image/d37671203c7a7977a719dded56eb025fbbe4a56f" data-size-300="https://i.scdn.co/image/076ab8c657f863e8af0ada938c119bbf5917b5e1" data-size-64="https://i.scdn.co/image/3efbe4e17a67354f2a78d046fbd0c8a66d56d77b">
+					<div class="track-row-number">36</div>
+					<div class="track-row-info "> Todo Dia
+						<div class="track-artist">Pabllo Vittar, Rico Dalasam</div>
+					</div>
+					<div class="track-row-duration">2:24</div>
+				</li>
+				<li class="track-row" data-position="37" data-name="Side To Side" data-artists="Ariana Grande, Nicki Minaj" data-duration-ms="226160" data-uri="spotify:track:4pLwZjInHj3SimIyN9SnOz" data-preview="musicas/side-to-side.mp3" data-web-player-url="https://play.spotify.com/track/4pLwZjInHj3SimIyN9SnOz" data-size-640="https://i.scdn.co/image/4b99550818a710cacdab71dc9c5a07aa28eb7ad9" data-size-300="https://i.scdn.co/image/e1446c8c042e41cb12215d7746294b974133a001" data-size-64="https://i.scdn.co/image/a45a827d9adef376b25f40e4281e591964c374c3">
+					<div class="track-row-number">37</div>
+					<div class="track-row-info "> Side To Side
+						<div class="track-artist">Ariana Grande, Nicki Minaj</div>
+					</div>
+					<div class="track-row-duration">3:46</div>
+				</li>
+				<li class="track-row" data-position="38" data-name="Let Me Love You" data-artists="DJ Snake, Justin Bieber" data-duration-ms="205946" data-uri="spotify:track:4pdPtRcBmOSQDlJ3Fk945m" data-preview="musicas/let-me-love-you.mp3" data-web-player-url="https://play.spotify.com/track/4pdPtRcBmOSQDlJ3Fk945m" data-size-640="https://i.scdn.co/image/1d96f6fbc5a4eaa9640d4ae41db0e4dc4fa91baa" data-size-300="https://i.scdn.co/image/2d331cdb83a9ee9aab5be493b619983d7c332082" data-size-64="https://i.scdn.co/image/1cb0121a2ac08e31fd2674e9828649fb7496218e">
+					<div class="track-row-number">38</div>
+					<div class="track-row-info "> Let Me Love You
+						<div class="track-artist">DJ Snake, Justin Bieber</div>
+					</div>
+					<div class="track-row-duration">3:25</div>
+				</li>
+				<li class="track-row" data-position="39" data-name="Tumbalatum" data-artists="Mc Kevinho" data-duration-ms="123001" data-uri="spotify:track:4aAq1afusFG6jRiOSHQZvN" data-preview="musicas/tumbalatum.mp3" data-web-player-url="https://play.spotify.com/track/4aAq1afusFG6jRiOSHQZvN" data-size-640="https://i.scdn.co/image/43569321ef10fa82436575dce532399ea16cc8fd" data-size-300="https://i.scdn.co/image/95f3f683b647c055fcafe7dde0e54d332d16069e" data-size-64="https://i.scdn.co/image/690a29fb8586f4e781ad5b360f495e4b3261bebe">
+					<div class="track-row-number">39</div>
+					<div class="track-row-info "> Tumbalatum
+						<div class="track-artist">Mc Kevinho</div>
+					</div>
+					<div class="track-row-duration">2:03</div>
+				</li>
+				<li class="track-row" data-position="40" data-name="Se o Amor Tiver Lugar" data-artists="Jorge &amp; Mateus" data-duration-ms="159905" data-uri="spotify:track:4sFVdIwmVj2y87qqOWwSU3" data-preview="musicas/se-o-amor-tiver-lugar.mp3" data-web-player-url="https://play.spotify.com/track/4sFVdIwmVj2y87qqOWwSU3" data-size-640="https://i.scdn.co/image/47a1291a164a0420a7e8dd5f76f546c8264a2d36" data-size-300="https://i.scdn.co/image/5d969ea767b6f9740606530b9848306f30e0b785" data-size-64="https://i.scdn.co/image/c2f8d4365b6dd16b37f63e0b44484303b2e1dd3b">
+					<div class="track-row-number">40</div>
+					<div class="track-row-info "> Se o Amor Tiver Lugar
+						<div class="track-artist">Jorge &amp; Mateus</div>
+					</div>
+					<div class="track-row-duration">2:39</div>
+				</li>
+				<li class="track-row" data-position="41" data-name="Homem de Família - Ao Vivo" data-artists="Gusttavo Lima" data-duration-ms="184888" data-uri="spotify:track:12wiyBZqQ3mOU7AfygXJCw" data-preview="musicas/homem-de-familia.mp3" data-web-player-url="https://play.spotify.com/track/12wiyBZqQ3mOU7AfygXJCw" data-size-640="https://i.scdn.co/image/1db90c3487f3625667da9b84c62046a65c189e62" data-size-300="https://i.scdn.co/image/3c51cc85d0f81f19308c79d5fed90603f16da73b" data-size-64="https://i.scdn.co/image/dbe3b13ee482118bbf095721523709dc1c71167b">
+					<div class="track-row-number">41</div>
+					<div class="track-row-info "> Homem de Família - Ao Vivo
+						<div class="track-artist">Gusttavo Lima</div>
+					</div>
+					<div class="track-row-duration">3:04</div>
+				</li>
+				<li class="track-row" data-position="42" data-name="Rockabye (feat. Sean Paul &amp; Anne-Marie)" data-artists="Clean Bandit, Sean Paul, Anne-Marie" data-duration-ms="251088" data-uri="spotify:track:5knuzwU65gJK7IF5yJsuaW" data-preview="musicas/rockabye.mp3" data-web-player-url="https://play.spotify.com/track/5knuzwU65gJK7IF5yJsuaW" data-size-640="https://i.scdn.co/image/bd5229f938b3ca00bb1821ecb415acb991929810" data-size-300="https://i.scdn.co/image/588aa676ded92cf04e98b5921b8422e6b5dcae9c" data-size-64="https://i.scdn.co/image/409e8a469637834bb4aaf7e1e3814beedc278fbe">
+					<div class="track-row-number">42</div>
+					<div class="track-row-info "> Rockabye (feat. Sean Paul &amp; Anne-Marie)
+						<div class="track-artist">Clean Bandit, Sean Paul, Anne-Marie</div>
+					</div>
+					<div class="track-row-duration">4:11</div>
+				</li>
+				<li class="track-row" data-position="43" data-name="O Nosso Santo Bateu - Na Praia / Ao Vivo" data-artists="Matheus &amp; Kauan" data-duration-ms="187133" data-uri="spotify:track:6SwI4OplF8m5NH8wHKIps8" data-preview="musicas/o-nosso-santo-bateu.mp3" data-web-player-url="https://play.spotify.com/track/6SwI4OplF8m5NH8wHKIps8" data-size-640="https://i.scdn.co/image/aef5a877d3266f8eef23662e0c0d661b553af4f1" data-size-300="https://i.scdn.co/image/4ba622caae9b1bcb455e03f2900274949bde04bc" data-size-64="https://i.scdn.co/image/95684479f4feb2ab544f9152e484e53f2dd95c83">
+					<div class="track-row-number">43</div>
+					<div class="track-row-info "> O Nosso Santo Bateu - Na Praia / Ao Vivo
+						<div class="track-artist">Matheus &amp; Kauan</div>
+					</div>
+					<div class="track-row-duration">3:07</div>
+				</li>
+				<li class="track-row" data-position="44" data-name="Happier" data-artists="Ed Sheeran" data-duration-ms="207520" data-uri="spotify:track:2RttW7RAu5nOAfq6YFvApB" data-preview="musicas/happier.mp3" data-web-player-url="https://play.spotify.com/track/2RttW7RAu5nOAfq6YFvApB" data-size-640="https://i.scdn.co/image/e6a84983ed9b0a04ce633b021329f7df034e7c7c" data-size-300="https://i.scdn.co/image/487bf17160e944c29ea63192a2655c0b808aee8f" data-size-64="https://i.scdn.co/image/72f9e56dae8188fc62fcdc9b081a9c11ad2d00ef">
+					<div class="track-row-number">44</div>
+					<div class="track-row-info "> Happier
+						<div class="track-artist">Ed Sheeran</div>
+					</div>
+					<div class="track-row-duration">3:27</div>
+				</li>
+				<li class="track-row" data-position="45" data-name="Pra Sempre Com Você - Ao Vivo" data-artists="Jorge &amp; Mateus" data-duration-ms="207520" data-uri="spotify:track:2KGv51jgAz8OTjNPyRryfq" data-preview="musicas/pra-sempre-com-você.mp3" data-web-player-url="https://play.spotify.com/track/2KGv51jgAz8OTjNPyRryfq" data-size-640="https://i.scdn.co/image/2e946a47cc1a2dcc232b0893272bf29066aef040" data-size-300="https://i.scdn.co/image/b983adb27a9080730c536c6c37d0f4f8cf9fcb9a" data-size-64="https://i.scdn.co/image/22d969b6ec8598f0bd846b7c1eb994ad6e4ba6de">
+					<div class="track-row-number">45</div>
+					<div class="track-row-info "> Pra Sempre Com Você - Ao Vivo
+						<div class="track-artist">Jorge &amp; Mateus</div>
+					</div>
+					<div class="track-row-duration">3:27</div>
+				</li>
+				<li class="track-row" data-position="46" data-name="Como É Que a Gente Fica - Ao Vivo" data-artists="Henrique &amp; Juliano" data-duration-ms="162480" data-uri="spotify:track:41mt7YrfLrIc4EQJZFCJtw" data-preview="musicas/como-é-que-a-gente-fica.mp3" data-web-player-url="https://play.spotify.com/track/41mt7YrfLrIc4EQJZFCJtw" data-size-640="https://i.scdn.co/image/b9e141cce3344ac53e6422068d11bbf74f6409e7" data-size-300="https://i.scdn.co/image/8590cc75b47ecd5142ea770666214c5e4ed9b6f8" data-size-64="https://i.scdn.co/image/2f06c05a96b1d36fdab8911b8a63fc51f4424641">
+					<div class="track-row-number">46</div>
+					<div class="track-row-info "> Como É Que a Gente Fica - Ao Vivo
+						<div class="track-artist">Henrique &amp; Juliano</div>
+					</div>
+					<div class="track-row-duration">2:42</div>
+				</li>
+				<li class="track-row" data-position="47" data-name="Infiel - Ao Vivo" data-artists="Marília Mendonça" data-duration-ms="201904" data-uri="spotify:track:38MpAndIjGAyVdcC6npX95" data-preview="musicas/infiel.mp3" data-web-player-url="https://play.spotify.com/track/38MpAndIjGAyVdcC6npX95" data-size-640="https://i.scdn.co/image/141301e9932aedde6c50a243437889ab1d78d53e" data-size-300="https://i.scdn.co/image/fa294dea82ba3328d337e93ffe8efa13221c4462" data-size-64="https://i.scdn.co/image/37ee295ef319031fe609b0b48c0f3e026b91c23d">
+					<div class="track-row-number">47</div>
+					<div class="track-row-info "> Infiel - Ao Vivo
+						<div class="track-artist">Marília Mendonça</div>
+					</div>
+					<div class="track-row-duration">3:21</div>
+				</li>
+				<li class="track-row" data-position="48" data-name="O Verão Está Chegando" data-artists="Mc Davi" data-duration-ms="162507" data-uri="spotify:track:4jswhbcaGqFe8v5uSHlqyb" data-preview="musicas/o-verão-está-chegando.mp3" data-web-player-url="https://play.spotify.com/track/4jswhbcaGqFe8v5uSHlqyb" data-size-640="https://i.scdn.co/image/78d70afbcb59727d75a81161606c14d1a6f325de" data-size-300="https://i.scdn.co/image/26ee7082262207dcc9cdf251ac9b77a1a891a155" data-size-64="https://i.scdn.co/image/f2766a92d7ed75dd20554dd73d0fd672a23d9d7e">
+					<div class="track-row-number">48</div>
+					<div class="track-row-info "> O Verão Está Chegando
+						<div class="track-artist">Mc Davi</div>
+					</div>
+					<div class="track-row-duration">2:42</div>
+				</li>
+				<li class="track-row" data-position="49" data-name="Partiu" data-artists="Mc Kekel" data-duration-ms="171240" data-uri="spotify:track:1LTxGBL6yKtfmW3K8EvbSY" data-preview="musicas/partiu.mp3" data-web-player-url="https://play.spotify.com/track/1LTxGBL6yKtfmW3K8EvbSY" data-size-640="https://i.scdn.co/image/339e60f04fbc47394c86705dd101d2d003e452db" data-size-300="https://i.scdn.co/image/ba083b35c2a1f4bd26368c110286ac0beea154d6" data-size-64="https://i.scdn.co/image/62eda567bd6fd4319877ec9286c649273bf6ad5d">
+					<div class="track-row-number">49</div>
+					<div class="track-row-info "> Partiu
+						<div class="track-artist">Mc Kekel</div>
+					</div>
+					<div class="track-row-duration">2:51</div>
+				</li>
+				<li class="track-row" data-position="50" data-name="Scared to Be Lonely" data-artists="Martin Garrix, Dua Lipa" data-duration-ms="220883" data-uri="spotify:track:3ebXMykcMXOcLeJ9xZ17XH" data-preview="musicas/scared-to-be-lonely.mp3" data-web-player-url="https://play.spotify.com/track/3ebXMykcMXOcLeJ9xZ17XH" data-size-640="https://i.scdn.co/image/9d838ad5190c61ff09be379040addb53597b7f2d" data-size-300="https://i.scdn.co/image/451523c5ae343c50da644ca6c64f551bfff880f6" data-size-64="https://i.scdn.co/image/098464b4718a03b143909984b481220f61124fb9">
+					<div class="track-row-number">50</div>
+					<div class="track-row-info "> Scared to Be Lonely
+						<div class="track-artist">Martin Garrix, Dua Lipa</div>
+					</div>
+					<div class="track-row-duration">3:40</div>
+				</li>
+			</ul>
+		</div>
+		<div id="overlay" class="overlay">
+			<div class="overlay-inner">
+				<div class="overlay-close"></div>
+				<div id="unavailable-track" class="unavailable-track hide">
+					<p class="overlay-message">A prévia de áudio de 30 segundos desta música não está disponível no seu país</p><a id="js-unavailable-track-get-spotify-button" class="btn btn-primary" href="https://app.adjust.com/em43gi?deep_link=spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg%3Fcontext%3D%26utm_campaign%3D%26utm_source%3D%26utm_medium%3D&amp;campaign=&amp;adgroup=&amp;creative=&amp;label=sp_cid%3Acad05a23757fb78d30368ade7f10a4cf" target="_top">Use o Spotify</a>
+					<button id="js-unavailable-track-open-client-button" class="btn">Abrir o Spotify</button>
+				</div>
+				<div id="upsell" class="upsell hide">
+					<p class="overlay-message">Para tocar a música inteira, você precisa ter o aplicativo do Spotify.</p><a id="js-upsell-get-spotify-button" class="btn btn-primary" href="https://app.adjust.com/em43gi?deep_link=spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg%3Fcontext%3D%26utm_campaign%3D%26utm_source%3D%26utm_medium%3D&amp;campaign=&amp;adgroup=&amp;creative=&amp;label=sp_cid%3Acad05a23757fb78d30368ade7f10a4cf" target="_top">Use o Spotify</a>
+					<button id="js-upsell-open-client-button" class="btn">Abrir o Spotify</button>
+				</div>
+				<div id="get-link" class="get-link hide">
+					<label> Código de incorporação:
+						<input onClick="this.select();" type="text" value="https://open.spotify.com/embed/user/spotifycharts/playlist/37i9dQZEVXbMXbN3EUUhlg">
+					</label>
+					<label> Obter o link:
+						<input onClick="this.select();" type="text" value="https://open.spotify.com/user/spotifycharts/playlist/37i9dQZEVXbMXbN3EUUhlg">
+					</label>
+					<p>Ao incorporar, você concorda com os <a href="https://developer.spotify.com/technologies/widgets/terms-of-use/" target="_top">termos</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div><span id="config" class="hide" data-preview="musicas/shape-of-you.mp3" data-uri="spotify:track:7qiZfU4dY1lWllzX7mPBI3" data-context="spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg"></span>
+
 						</div>
 					</div>
 				</div>
@@ -40,6 +442,28 @@
 		</div>
 	</div>
 </body>
+<script>
+	window.SpotifyEnvironment = {
+		autoplay: JSON.parse("false"),
+		context: {
+			uri: "spotify:user:spotifycharts:playlist:37i9dQZEVXbMXbN3EUUhlg",
+			type: "playlist"
+		},
+		strings: {
+			'Download Spotify': "Baixar o Spotify",
+			'Play on Spotify': "Tocar no Spotify",
+			'View on Spotify': "Visualizar no Spotify",
+			'Follow on Spotify': "Seguir no Spotify"
+		},
+		platform: "desktop",
+		isMobile: false,
+		usesWebPlayer: true,
+		isSpotified: true,
+		downloadLink: "https://www.spotify.com/signup/?creation_flow=embed&utm_source=open-embed&utm_campaign=&utm_medium="
+	};
+
+</script>
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/spotify.js"></script>
 </html> 
