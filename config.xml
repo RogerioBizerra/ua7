@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.myapp.mobile" version="1.8" xmlns="http://www.w3.org/ns/widgets">
-	<name>Repense sua Lavadora - Panasonic</name>
-	<description>A Fernanda Lima sabe tudo sobre a lavadora de roupas dela! E agora é sua vez de saber um pouco mais sobre as Lavadoras Panasonic!</description>
-	<author email="contato@rtpublicity.com.br" href="http://rtpublicity.com.br/sites/panasonic/p3-ipad">Repense sua Lavadora - Panasonic</author>
+<widget id="br.com.rtpublicity.ua7rt" version="1.0" xmlns="http://www.w3.org/ns/widgets">
+	<name>Urban Audio - Panasonic</name>
+	<description>REINVENTE A FORMA COMO A MÚSICA ACOMPANHA A SUA VIDA. O URBAN AUDIO foi totalmente redesenhado com funcionalidades incríveis, com o objetivo de alcançar um nível perfeito de sofisticação.</description>
+	<author email="contato@rtpublicity.com.br" href="http://rtpublicity.com.br/sites/panasonic/ua7">Urban Audio - Panasonic</author>
 	<preference name="phonegap-version" value="cli-6.5.0" />
 	<preference name="permissions" value="none" />
 	<preference name="orientation" value="landscape" />
@@ -24,5 +24,6 @@
 		<icon src="res/icon/ios/icon-76.png" width="76" height="76" />
 		<icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
 		<icon src="res/icon/ios/icon-83.5@2x.png" width="167" height="167" />
+		<icon src="res/icon/ios/icon120.png" width="120" height="120" />
 	</platform>
 </widget>
